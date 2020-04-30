@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My first project</title>
-    <link rel="icon" href="img/icons/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/fonts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,500;1,700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
+    <title>FormatService</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="communication">
             <div class="container">
-                <ul class="menu menu_active">
-                    <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Со своим автомобилем</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">На автомобиле компании</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Требования</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Оставить заявку</a></li>
-                </ul>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="communication_adres">м.Хуст, вул.І.Франка 16 </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 offset-md-1">
+                        <div class="communication_phone">+38(066)78 05 388</div>
+                        <div class="communication_email">format.in.ua@gmail.com</div>
+                    </div>
+                    <div class="communication_button col-sm-6 col-md-2">
+                        <button class="communication_btn"><a href="tel:+380667805388" class="communication_call">Замовити дзвінок</a></button>
+                    </div>
+                </div>    
             </div>
             <div class="gamburger gamburger_active">
                 <span></span>
@@ -34,372 +35,146 @@
         <div class="subheader">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 col-md-4 offset-md-1">
-                        <a href="#" class="subheader_logo"><img src="img/Logo/Logo.png" alt="logo"></a>
-                        <div class="subheader_official">Официальный партнер Uber в Москве</div>
+                    <div class="col-12 col-md-6">
+                        <a href="#" class="subheader_logo"><img src="img/icons/logo.png" alt="logo"></a>
                     </div>
-    
-                    <div class="x_notvisible col-6 col-md-3 offset-md-1 col-xl-2 offset-xl-2">
-                        <div class="subheader_call">Звоните нам ежедневно</div>
-                        <a href="tel:84957970988" class="subheader_phone">8 495 797 09 88</a>
-                    </div>
-                    <div class="xs_visible col-6 col-md-3 col-ld-2">
-                        <a href="tel:84957970988" class="x_visible subheader_phone">8 495 797 09 88</a>
-                        <button class="subheader_btn">заказать звонок</button>
+                    <div class="col-12 col-md-6">
+                        <ul class=" subheader_active">
+                            <li class="subheader_item"><a href="#" class="subheader_link">Головна</a></li>
+                            <li class="subheader_item"><a href="#" class="subheader_link">Послуги</a></li>
+                            <li class="subheader_item"><a href="#" class="subheader_link">Ціни</a></li>
+                            <li class="subheader_item"><a href="#" class="subheader_link">Контакти</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
-    <section class="promo">
+    <section class="services">
+        <div class="container">
+            <div class="row"></div>
+                <h1>Наші послуги у м.Хуст</h1>
+                <div class="services_line"></div>
+                <div class="services_parts">
+                    <div class="col-12">
+                        <div class="services_parts1">
+                            <div class="services_icons"></div>
+                            <div class="services_title">Заправка та регенерація картриджів</div>
+                        </div>
+                        <div class="services_parts2">
+                            <div class="services_icons"></div>
+                            <div class="services_title">Продаж витратних матеріалів</div>
+                        </div>
+                        <div class="services_parts3">
+                            <div class="services_icons"></div>
+                            <div class="services_title">Ремонт та обслуговування оргтехніки</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="services_btn">ВІДПРАВИТИ ЗАЯВКУ!</button>
+            </div>
+        </div>
+    </section>
+    <section class="info">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 offset-md-0">
-                    <h1 class="promo_header">КОМПАНИЯ UBER PARTNERS!</h1>
-                    <h2 class="promo_subheader">ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!</h2>
-                    <div class="promo_descr">
-                        Компания UBER  динамически развивающаяся. Компания на рынке занимает лидирующее место среди
-                        таксомоторных компаний, Компания абсолютно прозрачная вы можете контролировать все процессы у себя в личном кабинете. Бонуcная система.Помимо выполненной работы по заказам, компания начисляет бонусы за
-                        пиковое время.
-                        <br><br>
-                        Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Москве.  Водители у нас
-                        зарабатывают от 80000- 120000 в месяц.
-                    </div>
-                    <button class="promo_btn">ОТПРАВИТЬ ЗАЯВКУ!</button>
+                <div class="info_brends"></div>
+                <div class="info_line"></div>
+                <div class="col-12 col-md-6">
+                    <img src="img/image/posluga1.jpg" alt="cartridge">
+                    <h2>Що таке заправка картриджа?</h2>
+                    <h3>Заправка картриджа включає в себе:</h3>
+                    <ul>
+                        <li>повна розбірка картриджа;</li>
+                        <li>чистка всіх деталей та бункеру відпрацьованого 
+                            тонеру</li>
+                        <li>заправка тонером;</li>
+                        <li>збирання та змащування;</li>
+                        <li>прошивка або заміна чіпа (при необхідності);</li>
+                        <li>друк тестових сторінок та пакування.</li>
                 </div>
+                <div class="col-12 col-md-6">
+                    <img src="img/image/posluga2.jpg" alt="cartridge">
+                    <h2>Що таке регенерація картриджа?</h2>
+                    <h3>Регенерація картриджа включає в себе:</h3>
+                    <ul>
+                        <li>всі етапи заправки;</li>
+                        <li>заміна двох або більше зношених деталей 
+                            картриджа (фотобарабан, магнітний вал, лезо 
+                            дозування, лезо очистки, вал первинного заряду).</li>
+                </div>
+                <button class="info_btn">Дізнатись вартість</button>
+                <div class="info_line"></div>
+                <div class="info_infinity">
+                    <h2>Поєднання двох процедур в послузі <span>«Вічний картридж»</span></h2>
+                    <div class="info_block">
+                        <div class="info_logo">
+                            <img src="img/image/infinity.png" alt="infinity">
+                        </div>
+                        <div class="info_title">При співпраці по <span>“Вічному картриджі”</span> Ви завжди обмінюєте 
+                            свій пустий картридж на наш заправлений та відновлений. 
+                            Вам більше не потрібно купувати новий картридж та 
+                            платити окремо за заправку та регенерацію! Ви зможете 
+                            планувати свої витрати, економити час та кошти !
+                            <h2><span>Вартість послуги від 150грн!</span></h2>             
+                        </div>
+                    </div>
+                </div>
+                <div class="info_line"></div>
             </div>
         </div>
     </section>
-    <section class="reasons">
+    <section class="cooperation">
         <div class="container">
-            <div class="label">преимущества</div>
-            <h2 class="title">8 причин начать работать с нами</h2>
             <div class="row">
-                <div class="col-md-6">
-                    <div class="reasons_block">
-                        <div class="reasons_round">
-                            <img src="img/icons/1.png" alt="reason">
-                        </div>
-                        <div class="reasons_descr">
-                            <div class="reasons_subtitle">Никаких наличных, оплата происходит автоматически</div>
-                            <div class="reasons_text">
-                                Стоимость поездки оплачивается пассажиром с привязанной банковской карты, т.е. нет никаких рисков связанных с перевозкой наличности как для пассажира, так и для водителя, Вам не нужно искать мелкие деньги для размена.
-                            </div>
-                        </div>
+                <div class="cooperation_header">Варіанти співпраці по заправці картриджів:</div>
+                <div class="col-12 col-md-4">
+                    <div class="cooperation_subheader">Кур`єром
                     </div>
+                    <div class="cooperation_content">Кур’єр забирає Ваш пустий 
+                        картридж в день замовлення і 
+                        привозить заповнений 
+                        наступного дня.</div>
                 </div>
-                <div class="col-md-6">
-                    <div class="reasons_block">
-                        <div class="reasons_round">
-                            <img src="img/icons/2.png" alt="reason">
-                        </div>
-                        <div class="reasons_descr">
-                            <div class="reasons_subtitle">Комиссия 8% + БОНУСЫ</div>
-                            <div class="reasons_text">
-                                У нас минимальная комиссия и мы выплачиваем бонусы за каждую поездку, некоторые наши конкуренты оставляют бонусы себе. Мы работаем честно и с нами водители зарабатывают больше!
-                            </div>
-                        </div>
+                <div class="col-12 col-md-4">
+                    <div class="cooperation_subheader">Кур`єром з заміною
                     </div>
+                    <div class="cooperation_content">Ви віддаєте свій пустий картридж 
+                        та отримуєте наш підмінний на час 
+                        заправки , а при поверненні Вашого 
+                        заправленого картриджу віддаєте наш.
+                        <br>
+                        Ця послуга є безкоштовною і діє для 
+                        постійних клієнтів компанії та 
+                        розповсюджується на найпоширеніші 
+                        моделі картриджів.</div>
                 </div>
-                <div class="col-md-6">
-                    <div class="reasons_block">
-                        <div class="reasons_round">
-                            <img src="img/icons/3.png" alt="reason">
-                        </div>
-                        <div class="reasons_descr">
-                            <div class="reasons_subtitle">Высокий доход с гарантированными выплатами</div>
-                            <div class="reasons_text">
-                                Мы выплачиваем заработную плату на личную банковскую карту водителя! Вам не нужно оформлять ООО, ИП, платить налоги, подавать декларацию, оплачивать бухгалтерские услуги и ведение банковского счета.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="reasons_block">
-                        <div class="reasons_round">
-                            <img src="img/icons/4.png" alt="reason">
-                        </div>
-                        <div class="reasons_descr">
-                            <div class="reasons_subtitle">Работа в удобное время, никаких графиков</div>
-                            <div class="reasons_text">
-                                Вы просто нажимаете кнопку выйти на линию для начала работы, когда решите закончить, нажимаете выйти с линии. Вы можете подрабатывать только утром, вечером, в выходные или праздничные дни!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="reasons_block">
-                        <div class="reasons_round">
-                            <img src="img/icons/5.png" alt="reason">
-                        </div>
-                        <div class="reasons_descr">
-                            <div class="reasons_subtitle">Комфортное, прозрачное и простое подключение</div>
-                            <div class="reasons_text">
-                                Мы подключаем дистанционно и бесплатно, Вам нет необходимости приезжать к нам! Вы присылаете нам копии документов, мы регистрируем Вас и присылаем данные для подключения, через 1-2 дня Вы можете начинать работать!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="reasons_block">
-                        <div class="reasons_round">
-                            <img src="img/icons/6.png" alt="reason">
-                        </div>
-                        <div class="reasons_descr">
-                            <div class="reasons_subtitle">Всегда большое количество заказов</div>
-                            <div class="reasons_text">
-                                Приложение показывает, где на данный момент больше всего заказов и где действуют повышенные тарифы. У Вас не будет простоя и холостых пробегов. Наши пассажиры всегда приятные и абсолютно неконфликтные люди, которых приятно возить.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="reasons_block">
-                        <div class="reasons_round">
-                            <img src="img/icons/7.png" alt="reason">
-                        </div>
-                        <div class="reasons_descr">
-                            <div class="reasons_subtitle">Круглосуточная поддержка</div>
-                            <div class="reasons_text">
-                                В Uber действует круглосуточная поддержка водителей по электронной почте. Если что-то непонятно, Вы всегда можете задать вопрос через On-line консультацию.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="reasons_block">
-                        <div class="reasons_round">
-                            <img src="img/icons/8.png" alt="reason">
-                        </div>
-                        <div class="reasons_descr">
-                            <div class="reasons_subtitle">Без шашечек и наклеек</div>
-                            <div class="reasons_text">
-                                Вам не нужно менять цвет, устанавливать «шашки» на автомобиль и обклеивать его наклейками.
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-12 col-md-4">
+                    <div class="cooperation_subheader">Самостійно</div>
+                    <div class="cooperation_content">Ви можете приїхати до нас в офіс, 
+                        та ми заправимо Ваш картридж позачергово, <span> зі знижкою 20 %.</span></div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="mobile">
+    <section class="contact">
         <div class="container">
-            <div class="label">Возможности</div>
-            <div class="title">мобильное приложение убер</div>
-            <div class="subtitle">Сделайте заказ, совершите поездку и оплатите ее стоимость, используя свой мобильный телефон</div>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="mobile_items mobile_items_1">
-                        <div class="mobile_header">оформление заказа одним касанием</div>
-                        <div class="mobile_plus"></div>
-                    </div>
+                <div class="contact_header">Як нас знайти</div>
+                <div class="col-lg-6 col-md-7 ">
+                    <div class="contact_map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d279.6892594377638!2d23.294644540557854!3d48.1706318447704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4738294732364b79%3A0xaaa1dd53a3867529!2sMahazyn%20Kantstovariv%20%22Format%22!5e0!3m2!1sru!2sua!4v1587458527262!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
                 </div>
-                <div class="col-md-4">
-                    <div class="mobile_items mobile_items_2">
-                        <div class="mobile_header">надежная подача</div>
-                        <div class="mobile_plus"></div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="mobile_items mobile_items_3">
-                        <div class="mobile_header">прозрачные цены</div>
-                        <div class="mobile_plus"></div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="mobile_items mobile_items_4">
-                        <div class="mobile_header">безналичная оплата</div>
-                        <div class="mobile_plus"></div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="mobile_items mobile_items_5">
-                        <div class="mobile_header">обратная связь</div>
-                        <div class="mobile_plus"></div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="mobile_items mobile_items_6">
-                        <div class="mobile_header">разделить
-                            стоимость поездки</div>
-                        <div class="mobile_plus"></div>
-                    </div>
+                <div class="contact_box col-lg-6 col-md-5 ">
+                    <div class="contact_subheader">Адреса:</div>
+                    <div class="contact_content">Закарпатська обл., <br> м.Хуст, вул.І.Франка 16 <br> тел.:+38(066)78 05 388  <br> +38(096)96 95 796 <br> e-mail: format.in.ua@gmail.com </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="choice">
-        <div class="container">
-            <div class="choice_bg1">
-                <div class="label1">Возможности</div>
-                <div class="title1">Выбор - отличная штука!</div>
-                <div class="subtitle1">Закажите автомобиль, который подходит вам по стилю и бюджету</div>
-            </div>
-            <div class="choice_bg2">
-                <div class="choice_car">Машины на каждый день. <br>
-                    Лучше, быстрее и дешевле, чем такси
-                </div>
-            </div>
-            <img src="img/Logo/logo_bottom.png" alt="uber" class="choice_uber">   
+    <footer>
+        <div class="footer_resume">
+            ghfjddkdl;
         </div>
-    </section>
-    <section class="terms">
-        <div class="container">
-            <div class="label">возможности</div>
-            <div class="title">условия и требования</div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="terms_col">
-                        <div class="terms_title">УСЛОВИЯ: на авто компании:</div>
-                        <div class="terms_list">
-                            <img src="img/icons/green.png" alt="green">
-                            <div class="terms_text">Подключаем к системе UBER  под 10%.</div>
-                        </div>
-                        <div class="terms_list">
-                            <img src="img/icons/green.png" alt="green">
-                            <div class="terms_text">Ни каких взносов  0%!</div>
-                        </div>
-                        <div class="terms_list">
-                            <img src="img/icons/green.png" alt="green">
-                            <div class="terms_text">Можем подключать удаленно без приезда в офис</div>
-                        </div>
-                        <div class="terms_list">
-                            <img src="img/icons/green.png" alt="green">
-                            <div class="terms_text">ИП не требуется</div>
-                        </div>
-                        <div class="terms_list">
-                            <img src="img/icons/green.png" alt="green">
-                            <div class="terms_text">Заказы распределяются без учета рейтинга ближайшим водителям</div>
-                        </div>
-                        <div class="terms_list">
-                            <img src="img/icons/green.png" alt="green">
-                            <div class="terms_text">Работа только по безналичному расчету</div>
-                        </div>
-                        <div class="terms_list">
-                            <img src="img/icons/green.png" alt="green">
-                            <div class="terms_text">Деньги перечисляем на карту водителю или наличными в офисе</div>
-                        </div>
-                    </div>
-                    <div class="terms_subtext">Среда пятница и суббота работа на компанию остальные дни вы работаете на себя</div>
-                </div> 
-                <div class="col-md-6">
-                    <div class="terms_col"></div>
-                        <div class="terms_title">УСЛОВИЯ: со своим авто:</div>
-                        <div class="terms_list">
-                            <img src="img/icons/green.png" alt="green">
-                            <div class="terms_text">Предоставляем авто без залога</div>
-                        </div>
-                        <div class="terms_list">
-                            <img src="img/icons/green.png" alt="green">
-                            <div class="terms_text">Без ежедневных выплат по аренде</div>
-                        </div>
-                        <div class="terms_list">
-                            <img src="img/icons/green.png" alt="green">
-                            <div class="terms_text">Деньги перечисляем на карту водителю или наличными в офисе</div>
-                        </div>
-                    </div>
-                <div class="col-md-6">
-                    <div class="terms_col">
-                        <div class="terms_title">ТРЕБОВАНИЕ:</div>
-                        <div class="terms_list">
-                            <img src="img/icons/red.png" alt="green">
-                            <div class="terms_text">Наличие автомобиля без рекламы</div>
-                        </div>
-                        <div class="terms_list">
-                            <img src="img/icons/red.png" alt="green">
-                            <div class="terms_text">Автомобиль не должен быть желтый и не с желтыми номерами</div>
-                        </div>
-                        <div class="terms_list">
-                            <img src="img/icons/red.png" alt="green">
-                            <div class="terms_text">Машина не старше 3 лет</div>
-                        </div>
-                        <div class="terms_list">
-                            <img src="img/icons/red.png" alt="green">
-                            <div class="terms_text">Стаж вождения не менее 3 лет</div>
-                        </div>
-                        <div class="terms_list">
-                            <img src="img/icons/red.png" alt="green">
-                            <div class="terms_text">Дивайс на системе андроид 4.0и выше(самсунг)</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="terms_col">
-                        <div class="terms_title">ДОКУМЕНТЫ:</div>
-                        <div class="terms_list">
-                            <img src="img/icons/red.png" alt="green">
-                            <div class="terms_text">Права 2 стороны</div>
-                        </div>
-                        <div class="terms_list">
-                            <img src="img/icons/red.png" alt="green">
-                            <div class="terms_text">Паспорт лицевая сторона</div>
-                        </div>
-                        <div class="terms_list">
-                            <img src="img/icons/red.png" alt="green">
-                            <div class="terms_text">СтС</div>
-                        </div>
-                        <div class="terms_list">
-                            <img src="img/icons/red.png" alt="green">
-                            <div class="terms_text">Лицензия( если есть)</div>
-                        </div>
-                        <div class="terms_list">
-                            <img src="img/icons/red.png" alt="green">
-                            <div class="terms_text">Номер телефона</div>
-                        </div>
-                        <div class="terms_list">
-                            <img src="img/icons/red.png" alt="green">
-                            <div class="terms_text">Номер карты для перечисления денег(указать в письме)!</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="map">
-        <div class="containet">
-            <div class="label1">города</div>
-            <div class="title1">По всему миру</div>
-            <div class="subtitle1">Мы в вашем городе и по всему миру</div>
-            <div class="map_city"><a href="#">посмотреть все города</a></div>
-        </div>
-    </section>
-    <section class="footer">
-        <div class="footer_box">
-            <div class="footer_icons">
-                <a href="#" class="footer_link"><i class="icon-home"></i></a>
-            </div>
-            <div class="footer_icons">
-                <a href="#" class="footer_link"><i class="icon-phone"></i></a>
-            </div>
-            <div class="footer_icons">
-                <a href="#" class="footer_link"><i class="icon-facebook"></i></a>
-            </div>
-            <div class="footer_icons">
-                <a href="#" class="footer_link"><i class="icon-truck"></i></a>
-            </div>
-        </div>
-        <div class="footer_box2">
-            <a href="#" class="footer_link1"><img src="img/icons/app_store.png" alt="facebook"></a>
-        </div>
-        <div class="container">
-            <div class="footer_line"></div>
-            <ul class="footer_menu">
-                <li class="footer_menu_item"><a href="#" class="menu_link">на главную</a></li>
-                <li class="footer_menu_item"><a href="#" class="menu_link">города</a></li>
-                <li class="footer_menu_item"><a href="#" class="menu_link">для водителей</a></li>
-            </ul>  
-            <ul class="footer_submenu">
-                <li class="footer_submenu_item"><a href="#" class="submenu_link">центр поддержки</a></li>
-                <li class="footer_submenu_item"><a href="#" class="submenu_link">вакансии</a></li>
-                <li class="footer_submenu_item"><a href="#" class="submenu_link">разработчики</a></li>
-                <li class="footer_submenu_item"><a href="#" class="submenu_link">блог</a></li>
-                <li class="footer_submenu_item"><a href="#" class="submenu_link">о нас</a></li>
-            </ul>   
-            <div class="footer_rus"><a href="#">русский</a></div>
-        </div>
-        <div class="footer_endline"></div>  
-    </section>
-    <script src="js/script.js"></script>
+    </footer>
 </body>
 </html>
